@@ -2,11 +2,8 @@ def binary_search(my_list, num)
   mid = (my_list.length-1) / 2
   unless num == my_list[mid]  
     return nil if my_list.length <= 2
-    if my_list[mid] < num 
-      return binary_search((my_list.slice(mid..-1)), num)
-    else 
-      return binary_search((my_list.slice(0..mid)), num)
-    end
+    return binary_search((my_list.slice(mid..-1)), num) if my_list[mid] < num
+    return binary_search((my_list.slice(0..mid)), num) if my_list[mid] > num
   end 
   my_list[mid]
 end       
