@@ -8,7 +8,7 @@ def sequence(word_a, word_b)
                 cell[i] = cell[i-1]
             end
         end 
-    cell[cell.keys.last] 
+    cell.values.max
 end 
 
 puts sequence("fosh", "fish") == 3

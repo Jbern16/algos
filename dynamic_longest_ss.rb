@@ -7,7 +7,7 @@ def substring(word_a, word_b)
             cell[i] = 0
         end
     end
-    cell[cell.keys.last]
+    cell.values.max
 end
 
 puts substring("fish", "hish") == 3
