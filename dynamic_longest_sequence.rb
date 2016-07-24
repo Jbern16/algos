@@ -11,4 +11,4 @@ def sequence(word_a, word_b)
     cell[cell.keys.last] 
 end 
 
-puts sequence("fosh", "fish") == 3 
+puts sequence("fosh", "fish") == 3

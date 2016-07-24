@@ -1,5 +1,5 @@
 def substring(word_a, word_b)
-    cell = {}
+    cell = {-1 => 0}
     word_a.split('').each_with_index do |l, i|
         if l == word_b[i] 
             cell[i] = cell[i-1] + 1
