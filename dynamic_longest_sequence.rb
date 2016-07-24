@@ -1,4 +1,3 @@
-require 'pry'
 def sequence(word_a, word_b)
     cell = {-1 => 0}
         word_a.split("").each_with_index do |l, i|
