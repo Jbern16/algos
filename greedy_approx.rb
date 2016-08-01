@@ -1,5 +1,4 @@
 require 'set'
-require 'pry'
 
 class Stations
   attr_reader :stations
