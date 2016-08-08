@@ -28,4 +28,3 @@ deep = [1,2, [1, [2,2,3, [2, 3, 4, [2, 3], 5], 3], 4], 3, 6, [1, 2, 3], 5 ]
 
 puts basic_flatten([1,2,[1, 2], 3, 6, [1, 2, 3], 5 ]).inspect
 puts recursive_flatten(deep).inspect
-puts deep_iter_flatten(deep).inspect
